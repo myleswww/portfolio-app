@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-pink: #FF4365;
+  --primary-yellow: #F9C80E;
+}
+body{
+  font-family: "Roboto-Condensed: sans-serif";
+
+}
 .App {
   text-align: center;
 }
@@ -35,4 +45,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*nav links */
+nav a.nav-link, a.nav-item{
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-pink) !important;
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  margin-left: .75rem;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover{
+  
+  text-shadow: 0.05rem 0.05rem var(--primary-yellow);
+}
+
+.navbar-nav > li > a:focus{
+  border-top: 0.1875rem solid var(--primary-yellow);
 }
