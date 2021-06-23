@@ -4,8 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <h2>portfolio project
-    </h2>
+    <h2>portfolio project</h2>
   );
 }
 
