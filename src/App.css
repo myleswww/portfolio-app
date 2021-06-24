@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 :root{
   --primary-pink: #FF4365;
@@ -9,7 +10,7 @@
 body{
   font-family: "Roboto-Condensed", sans-serif !important;
   background-image: linear-gradient(to bottom,
-   #584692 70%,  #023788 100%);
+   #584692 70%,  #261447 100%);
   background-clip: content-box, padding-box;
 
 }
@@ -77,6 +78,9 @@ nav ul li{
   max-width: 17.25rem;
   padding: 0 !important;
   margin-left: .75rem;
+  font-family: 'Permanent Marker', cursive;
+  color: var(--primary-yellow) !important;
+  text-shadow: 0.15rem 0.15rem var(--primary-pink);
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:hover{
@@ -122,6 +126,7 @@ nav ul li{
 .typed-text{
   font-size: 2rem;
   color: var(--primary-pink);
+  font-family: 'Staatliches', cursive;
 }
 
 @media(max-width: 768px){
@@ -180,6 +185,9 @@ nav ul li{
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.photo-wrap p{
+  padding: 10px;
 }
 .profileimg{
   width:16rem;
