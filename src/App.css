@@ -180,6 +180,10 @@ nav ul li{
   text-shadow: 0.1rem 0.1rem var(--primary-yellow);
 }
 
+.container p{
+  font-family: 'Staatliches', cursive !important;
+  font-size: larger;
+}
 
 .photo-wrap{
   display:flex;
@@ -201,5 +205,103 @@ nav ul li{
   .profileimg{
     width: 10rem;
 
+  }
+}
+
+/*Experience*/
+.experience{
+  z-index: 5;
+  font-family: 'Permanent Marker', cursive;
+  color: var(--primary-yellow) !important;
+  text-shadow: 0.1rem 0.1rem var(--primary-pink) !important;
+  box-shadow: 0.1rem  var(--primary-pink) !important;
+  padding: 0.7rem;
+  border-top: 10px solid var(--primary-yellow);
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: ridge;
+}
+
+.experience-wrapper{
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.experience-wrapper:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 1rem;
+  height: 100%;
+  z-index: 1;
+  background: var(--primary-yellow);
+}
+
+.timeline-block{
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right{
+  float: right;
+  border-bottom: 2px solid var(--primary-yellow);
+}
+
+.timeline-block-left{
+  float: left;
+  direction: rtl;
+  border-bottom: 2px solid var(--primary-yellow);
+}
+
+.marker{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary-pink);
+  background: var(--primary-pink);
+  margin-top: 0.625rem;
+  z-index: 5;
+}
+
+.timeline-content{
+  width: 95%;
+  direction: ltr;
+  margin-top: 0.3215rem;
+  
+}
+
+.timeline-content h3{
+  text-shadow: 0.1rem 0.1rem var(--primary-yellow) !important;
+  
+}
+
+.timeline-content p{
+  font-family: 'Staatliches', cursive !important;
+  font-size: larger;
+  
+}
+
+@media(max-width: 768px){
+  .experience-wrapper{
+    padding-left: 0;
+  }
+  .experience-wrapper::before{
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .timeline-block-right{
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left{
+    float: none;
+    direction: ltr;
+    width: 100%;
   }
 }
