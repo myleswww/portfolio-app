@@ -511,15 +511,15 @@ nav ul li{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder{
+.contact::-webkit-input-placeholder, .contact::-webkit-input-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact input::-moz-placeholder, .contact textarea::-moz-placeholder{
+.contact::-moz-placeholder, .contact::-moz-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder{
+.contact:-ms-input-placeholder, .contact:-ms-input-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
