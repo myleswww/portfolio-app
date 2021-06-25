@@ -3,13 +3,29 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import About from "./components/AboutMe";
+import Experience from './components/Experience';
 import Particles from "react-particles-js";
+import Portfolio from './components/Portfolio';
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
     <Particles 
+      options={{
+        interactivity:{
+          detectsOn: "window",
+          events:{
+            onHover:{
+              enable:true,
+              mode: "repulse"
+            }
+
+        }}
         
+      }}  
       params={{
         polygon:{
           scale: 5,
@@ -69,6 +85,11 @@ function App() {
     />
     <Navbar />
     <Header />
+    <About />
+    <Experience />
+    <Portfolio />
+    <Contact />
+    <Footer />
     </>
   );
 }

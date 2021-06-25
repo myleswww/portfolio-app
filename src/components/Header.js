@@ -4,7 +4,7 @@ import Typed from "react-typed";
 
 const Header = () => {
     return (
-        <div className ="header-wrapper">
+        <div id="home" className ="header-wrapper">
             <div className="main-info">
                 <h1>Hi, I'm Myles!</h1>
                 <Typed
