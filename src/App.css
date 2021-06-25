@@ -566,3 +566,30 @@ input.form-control{
     padding: 1rem;
   }
 }
+
+/*Footer*/
+.footer{
+  background: #101114;
+  padding: .5rem;
+}
+
+.footer a{
+  font-size: small;
+  text-decoration: none;
+  color: var(--primary-pink);
+  font-family: "Roboto-Condensed", sans-serif !important;
+  
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: var(--primary-pink);
+  text-shadow: 0rem 0rem .5rem var(--primary-yellow);
+  cursor: pointer;
+}
+
+.footer p{
+  font-size: small;
+  font-family: "Roboto-Condensed", sans-serif !important;
+  margin-bottom: 0;
+}

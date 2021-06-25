@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Particles from "react-particles-js";
 import Portfolio from './components/Portfolio';
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
     <Experience />
     <Portfolio />
     <Contact />
+    <Footer />
     </>
   );
 }
