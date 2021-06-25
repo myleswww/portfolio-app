@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio-app/static/css/main.3bde4310.chunk.css",
+    "main.js": "/portfolio-app/static/js/main.eadca1c2.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.eadca1c2.chunk.js.map",
+    "runtime-main.js": "/portfolio-app/static/js/runtime-main.779805ef.js",
+    "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.779805ef.js.map",
+    "static/css/2.fbd1b587.chunk.css": "/portfolio-app/static/css/2.fbd1b587.chunk.css",
+    "static/js/2.c51bb3d8.chunk.js": "/portfolio-app/static/js/2.c51bb3d8.chunk.js",
+    "static/js/2.c51bb3d8.chunk.js.map": "/portfolio-app/static/js/2.c51bb3d8.chunk.js.map",
+    "static/js/3.c87abafd.chunk.js": "/portfolio-app/static/js/3.c87abafd.chunk.js",
+    "static/js/3.c87abafd.chunk.js.map": "/portfolio-app/static/js/3.c87abafd.chunk.js.map",
+    "index.html": "/portfolio-app/index.html",
+    "static/css/2.fbd1b587.chunk.css.map": "/portfolio-app/static/css/2.fbd1b587.chunk.css.map",
+    "static/css/main.3bde4310.chunk.css.map": "/portfolio-app/static/css/main.3bde4310.chunk.css.map",
+    "static/js/2.c51bb3d8.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.c51bb3d8.chunk.js.LICENSE.txt",
+    "static/media/IMG-8270.5acadfa7.jpg": "/portfolio-app/static/media/IMG-8270.5acadfa7.jpg",
+    "static/media/Raspberry_Pi_4_Model_B_-_Side.f3b540c0.jpg": "/portfolio-app/static/media/Raspberry_Pi_4_Model_B_-_Side.f3b540c0.jpg",
+    "static/media/autism-app.f4452ca0.png": "/portfolio-app/static/media/autism-app.f4452ca0.png",
+    "static/media/brain.d4763e9c.png": "/portfolio-app/static/media/brain.d4763e9c.png",
+    "static/media/clients-icon-png-21.9128010c.jpg": "/portfolio-app/static/media/clients-icon-png-21.9128010c.jpg",
+    "static/media/github.63a78ed4.jpg": "/portfolio-app/static/media/github.63a78ed4.jpg",
+    "static/media/mecrop.8e0ba1ff.jpg": "/portfolio-app/static/media/mecrop.8e0ba1ff.jpg",
+    "static/media/App.css": "/portfolio-app/static/media/wallpaperflare.com_wallpaper.718ff429.jpg",
+    "static/media/python-server.a57f45e4.jpg": "/portfolio-app/static/media/python-server.a57f45e4.jpg",
+    "static/media/river.0613334f.png": "/portfolio-app/static/media/river.0613334f.png",
+    "static/media/sun.fdeeca06.png": "/portfolio-app/static/media/sun.fdeeca06.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.779805ef.js",
+    "static/css/2.fbd1b587.chunk.css",
+    "static/js/2.c51bb3d8.chunk.js",
+    "static/css/main.3bde4310.chunk.css",
+    "static/js/main.eadca1c2.chunk.js"
+  ]
+}
