@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
                             <FacebookShareButton
-                                url={"https://github.com/myleswww"}
+                                url={"https://myleswww.github.io/portfolio-app/"}
                                 quote={"Myles Wright's Developer Portfolio"}
                                 hashtag="#react.js"
                             >
@@ -39,7 +39,7 @@ const Footer = () => {
 
 
                             <TwitterShareButton
-                                url={"https://github.com/myleswww"}
+                                url={"https://myleswww.github.io/portfolio-app/"}
                                 quote={"Myles Wright's Developer Portfolio"}
                                 hashtag="#react.js"
                             >
@@ -47,13 +47,13 @@ const Footer = () => {
 
 
                             <RedditShareButton
-                                url={"https://github.com/myleswww"}
+                                url={"https://myleswww.github.io/portfolio-app/"}
                                 quote={"Myles Wright's Developer Portfolio"}
                                 hashtag="#react.js"
                             >
                                 <RedditIcon className="mx-3" size={36}></RedditIcon></RedditShareButton>
                             <LinkedinShareButton
-                                url={"https://github.com/myleswww"}
+                                url={"https://myleswww.github.io/portfolio-app/"}
                                 quote={"Myles Wright's Developer Portfolio"}
                                 hashtag="#react.js"
                             >
