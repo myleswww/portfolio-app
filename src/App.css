@@ -85,12 +85,15 @@ nav ul li{
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:hover{
   
-  text-shadow: 0.05rem 0.05rem var(--primary-yellow);
+  text-shadow: 0rem 0rem 1rem var(--primary-yellow);
+  transform: scale(1.1);
   transition: .2s ease-in-out;
 }
 
 .navbar-nav > li > a:focus{
   border-top: 0.1875rem solid var(--primary-yellow);
+  text-shadow: 0rem 0rem 1rem var(--primary-yellow);
+  transform: scale(1.1);
 }
 
 
@@ -159,7 +162,8 @@ nav ul li{
   text-shadow: 0.1rem 0.1rem var(--primary-pink);
   box-shadow: 0.1rem 0.1rem var(--primary-pink);
   color: var(--primary-yellow) !important;
-  
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 /*Particles*/
@@ -444,5 +448,121 @@ nav ul li{
   .portfolio-image-popupbox{
     width: 50%;
     height:50%;
+  }
+}
+
+/*Contact Form */
+.contact{
+  background: url(pyrimid.png) no-repeat;
+  box-shadow: 0 2rem 2rem #261447 inset;
+  padding: 10rem 0;
+
+}
+
+.contact h1{
+  font-family: 'Permanent Marker', cursive !important;
+  text-shadow: 0rem 0rem 1rem var(--primary-yellow);
+  color: var(--primary-pink);
+  padding: 1.3rem 0;
+}
+
+.contact p{
+  font-family: 'Staatliches', cursive !important;
+  color: var(--primary-yellow);
+  font-size: larger;
+}
+
+/* Form Elements */
+.contact input, .contact textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-yellow);
+  border-radius: 0;
+  color: var(--primary-pink) !important;
+  font-family: 'Staatliches', cursive !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contact .container{
+  padding: 5rem 0;
+}
+
+.contact input:focus, .contact textarea:focus{
+  background: none;
+  border-bottom: 2px solid var(--primary-yellow);
+  transition: 0.3s ease-in-out;
+}
+
+.contact input::placeholder, .contact textarea::placeholder{
+  color: #2de2e6;
+  opacity: 20%;
+}
+
+.contact textarea{
+  height: 13.85rem !important;
+  margin-bottom: 0rem;
+}
+
+.contact input{
+  height: 2.37rem !important;
+  margin-bottom: 0rem;
+}
+.contact-btn{
+  font-size: larger;
+  color: var(--primary-pink);
+  border: 2px solid var(--primary-yellow);
+  margin: 1rem 0 0 0;
+  width: 100% !important;
+  background: none;
+  height: 30%;
+}
+
+.contact-btn:hover{
+  box-shadow: .5rem .5rem var(--primary-pink);
+  transition: 0.3s ease-in-out;
+  text-shadow: .1rem .1rem var(--primary-yellow);
+}
+
+.line{
+  position: relative;
+  width: 0;
+  height: 2px;
+  background: var(--primary-pink);
+  margin-top: -0.1rem;
+}
+
+input:focus+.line, textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control{
+  margin:0.1rem 0;
+  margin-top: 1rem;
+}
+
+.success-message{
+  color:#2de2e6;
+  font-family: 'Staatliches', cursive !important;
+}
+
+
+/*Media*/
+@media(max-width: 468px){
+  .contact{
+    overflow-x: hidden;
+  }
+  .contact .container{
+    padding: 0 1rem;
+  }
+
+  .contact p{
+    padding: 1rem;
   }
 }
