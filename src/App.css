@@ -381,9 +381,11 @@ nav ul li{
 
 
 .portfolio-image-box{
+  width: 15rem !important;
+  height: 8rem !important;
   position: relative;
-  margin: 1rem;
-  overflow: hidden;
+  margin: 5rem;
+  overflow: visible;
 }
 
 /*Overflow box*/
@@ -407,8 +409,8 @@ nav ul li{
 .portfolio-icon{
   position: absolute;
   opacity: 0;
-  margin-left: -8rem;
-  margin-top: 3.6rem;
+  margin-left: 7rem;
+  margin-top: -4.75rem;
   color: var(--primary-yellow);
   font-size: 1.5rem;
   z-index: 8;
@@ -439,15 +441,16 @@ nav ul li{
 
 
 
-@media(max-width: 768px){
-  .portfolio-image-popupbox{
+@media(max-width: 700px){
+  .image-box-wrapper{
+    padding: 0rem;
     width: 100%;
   }
 }
 
 @media(max-height: 900px){
   .popupbox-wrapper{
-    height:100% !important;
+    height:80% !important;
   }
 
   .portfolio-image-popupbox{
@@ -506,7 +509,7 @@ nav ul li{
 
 .contact input::placeholder, .contact textarea::placeholder{
   color: #2de2e6;
-  opacity: 20%;
+  opacity: 50%;
 }
 
 .contact textarea{
