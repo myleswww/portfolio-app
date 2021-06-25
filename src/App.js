@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import About from "./components/AboutMe";
 import Experience from './components/Experience';
 import Particles from "react-particles-js";
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
     <Header />
     <About />
     <Experience />
+    <Portfolio />
     </>
   );
 }

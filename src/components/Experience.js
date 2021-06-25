@@ -14,8 +14,8 @@ const Experience = () => {
                     <div className="timeline-content">
                         <h3>2016-2019</h3>
                         <p>Attended Ivy Tech Community College, 3.5GPA</p>
-                        <p>Associates Degree in Computer Science.
-                            Awards: Dean's List Spring 2018, Fall 2018, and Spring 2019.
+                        <p>Associates Degree in Computer Science <br></br>
+                            Awards: Dean's List Spring 2018, Fall 2018, and Spring 2019<br></br>
                             Relevant Coursework: Java Development, Data Structures, Discrete Logic for Computers, Website
                             Development and Design, Database Systems, Network Communications, Hardware/Software Support
                         </p>
@@ -28,7 +28,7 @@ const Experience = () => {
                         <h3>2018-2019</h3>
                         <p>Operations Supervisor for UPS</p>
                         <p>
-                            Handled audits on employees, leading to decreased rate of lost parcels;
+                            Handled audits on employees, leading to decreased rate of lost parcels<br></br>
                             Helped test smartphone rollout for facility with the QA team and development team, resulting in every
                             UPS facility introducing a smartphone system.
                         </p>
@@ -41,10 +41,10 @@ const Experience = () => {
                         <h3>2019-2021</h3>
                         <p>Attended Butler University, 3.45GPA</p>
                         <p>
-                            Bachelor’s Degree in Computer Science
-                            Member of Upsilon Pi Epsilon, Predident of the CRM club 2020-2021.
+                            Bachelor’s Degree in Computer Science<br></br>
+                            Member of Upsilon Pi Epsilon<br></br> President of the CRM club 2020-2021<br></br>
                             Relevant coursework: Theory of Computation, Network Systems, Parallel Algorithms, Software
-                            Engineering.
+                            Engineering<br></br>
                             Related Projects: Developed mobile learning tool for children on the Autistic Spectrum.
                             
                         </p>
@@ -56,10 +56,10 @@ const Experience = () => {
                     <div className="timeline-content">
                         <h3>2019-2021</h3>
                         <p>IT Technician Shift Lead for Butler University</p>
-                        <p>Awards: Best New Student Employee 2019.
-                            Trained 10 new Technicians which resulted in better customer support response time.
-                            Managed data backup and recovery for 500+ employees.
-                            Manage and coordinate a team of 2-3 student employees daily, resulting in better team performance.
+                        <p>Awards: Best New Student Employee 2019<br></br>
+                            Trained 10 new Technicians which resulted in better customer support response time<br></br>
+                            Managed data backup and recovery for 500+ employees<br></br>
+                            Manage and coordinate a team of 2-3 student employees daily, resulting in better team performance<br></br>
                         </p>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const Experience = () => {
                     <div className="timeline-content">
                         <h3>May 2020-August 2020</h3>
                         <p>IT Developer Intern for Butler University</p>
-                        <p>Virtual Reality discovery for future projects, which led to better support for virtual classes
+                        <p>Virtual Reality discovery for future projects, which led to better support for virtual classes<br></br>
                             Developed event scanning project using Python and REST API for safer check-in during the Covid-19
                             pandemic
                         </p>

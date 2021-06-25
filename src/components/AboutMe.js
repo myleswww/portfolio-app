@@ -1,6 +1,7 @@
 import React from "react";
 import author from "../mecrop.jpg";
 import cat from "../IMG-8270.jpg";
+import sun from "../sun.png";
 
 const AboutMe = () => {
     return (
@@ -11,7 +12,7 @@ const AboutMe = () => {
                         <img className="profileimg" src={author} alt="author..."/>
                     </div>
                 </div>
-                <div className="col-lg-6 col-xm-12">
+                <div className="about-me col-lg-6 col-xm-12">
                     <h1>About Me</h1>
                     <p>
                         Hello, my name is Myles! I am a full stack developer and a computer science graduate passionate about UI design and data engineering. 
@@ -26,10 +27,10 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="row">
-            <div className="col-lg-6 col-xm-12">
-                    
+            <div className="design col-lg-6 col-xm-12">
+                    <img className="sun-img" src={sun} alt="sun..." />
                 </div>
-            <div className="col-lg-6 col-xm-12">
+            <div className="about-me col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
                         <img className="profileimg" src={cat} alt="author..."/>
                         <p>This is Simon. He is the worst doodoohead troublemaking smelly boy that I have ever met. He also sits for his food. And does parkour.</p>
