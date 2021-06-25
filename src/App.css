@@ -507,10 +507,16 @@ nav ul li{
   transition: 0.3s ease-in-out;
 }
 
-.contact input::placeholder, .contact textarea::placeholder{
+.contact input::placeholder, .contact textarea::placeholder, 
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder, 
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder,
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder,
+.contact input:-moz-placeholder, .contact textarea:-moz-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
+
+
 
 .contact textarea{
   height: 13.85rem !important;
