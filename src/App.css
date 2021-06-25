@@ -508,7 +508,7 @@ nav ul li{
 }
 
 .contact input::placeholder, .contact textarea::placeholder{
-  color: #2de2e6;
+  color: #2de2e6 !important;
   opacity: 50%;
 }
 
