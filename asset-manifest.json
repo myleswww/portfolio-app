@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.f9bbbaa8.chunk.css",
+    "main.css": "/portfolio-app/static/css/main.f0c0c178.chunk.css",
     "main.js": "/portfolio-app/static/js/main.d7f65b24.chunk.js",
     "main.js.map": "/portfolio-app/static/js/main.d7f65b24.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.779805ef.js",
@@ -12,7 +12,7 @@
     "static/js/3.c87abafd.chunk.js.map": "/portfolio-app/static/js/3.c87abafd.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
     "static/css/2.fbd1b587.chunk.css.map": "/portfolio-app/static/css/2.fbd1b587.chunk.css.map",
-    "static/css/main.f9bbbaa8.chunk.css.map": "/portfolio-app/static/css/main.f9bbbaa8.chunk.css.map",
+    "static/css/main.f0c0c178.chunk.css.map": "/portfolio-app/static/css/main.f0c0c178.chunk.css.map",
     "static/js/2.c51bb3d8.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.c51bb3d8.chunk.js.LICENSE.txt",
     "static/media/IMG-8270.5acadfa7.jpg": "/portfolio-app/static/media/IMG-8270.5acadfa7.jpg",
     "static/media/Raspberry_Pi_4_Model_B_-_Side.f3b540c0.jpg": "/portfolio-app/static/media/Raspberry_Pi_4_Model_B_-_Side.f3b540c0.jpg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.779805ef.js",
     "static/css/2.fbd1b587.chunk.css",
     "static/js/2.c51bb3d8.chunk.js",
-    "static/css/main.f9bbbaa8.chunk.css",
+    "static/css/main.f0c0c178.chunk.css",
     "static/js/main.d7f65b24.chunk.js"
   ]
 }
