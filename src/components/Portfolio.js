@@ -127,13 +127,13 @@ const Portfolio = () => {
     }
 
     return (
-        <div className="portfolio-wrapper">
+        <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-center py-5">
                     Portfolio
                 </h1>
                 <div className="image-box-wrapper row justify-content-center">
-                    <div className="portfolio-image-box" onClick={openPopupboxAutism}>
+                    <div className="portfolio-image-box col" onClick={openPopupboxAutism}>
                         <img className="portfolio-image" src={autismapp} alt="Autism Therapy app..."></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -141,7 +141,7 @@ const Portfolio = () => {
                 
                 {/*-*/}
                 
-                    <div className="portfolio-image-box" onClick={openPopupboxCard}>
+                    <div className="portfolio-image-box col" onClick={openPopupboxCard}>
                         <img className="portfolio-image" src={rasp} alt="Raspberry Pi Card Scanner..."></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -149,7 +149,7 @@ const Portfolio = () => {
                 
                 {/*-*/}
                 
-                    <div className="portfolio-image-box" onClick={openPopupboxClient}>
+                    <div className="portfolio-image-box col" onClick={openPopupboxClient}>
                         <img className="portfolio-image" src={client} alt="Client Application..."></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -157,7 +157,7 @@ const Portfolio = () => {
                 
                 {/*-*/}
                 
-                    <div className="portfolio-image-box" onClick={openPopupboxServer}>
+                    <div className="portfolio-image-box col" onClick={openPopupboxServer}>
                         <img className="portfolio-image" src={server} alt="Server Application..."></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />

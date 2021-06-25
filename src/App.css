@@ -53,7 +53,11 @@ body{
     transform: rotate(360deg);
   }
 }
-
+.navbar{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
 nav{
   z-index: 2;
 }
@@ -182,6 +186,7 @@ nav ul li{
 
 .container h1{
   text-shadow: 0.1rem 0.1rem var(--primary-yellow);
+  padding-top: 2rem;
 }
 
 .container p{
