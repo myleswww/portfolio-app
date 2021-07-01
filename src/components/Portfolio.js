@@ -5,6 +5,7 @@ import rasp from "../Raspberry_Pi_4_Model_B_-_Side.jpg";
 import client from "../clients-icon-png-21.jpg";
 import server from "../python-server.jpg";
 import github from "../github.jpg";
+import butler from "../Butler_Bulldogs_logo.svg.png";
 //Fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -150,7 +151,7 @@ const Portfolio = () => {
                 {/*-*/}
                 
                     <div className="portfolio-image-box col-lg-1 col-md-6 col-sm-6 justify-content-center" onClick={openPopupboxClient}>
-                        <img className="portfolio-image" src={client} alt="Client Application..."></img>
+                        <img className="portfolio-image" src={butler} alt="Client Application..."></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>

@@ -50,7 +50,9 @@ const Contact = () => {
                         type="text" 
                         className="form-control"
                         placeholder="Name"
+                        placeholderTextColor="#2de2e6"
                         name="name"
+                        value=''
                         aria-invalid={errors.name ? "true" : "false"}
                         {...register("name", {
                           required: "Please enter your name",
@@ -72,6 +74,7 @@ const Contact = () => {
                         className="form-control"
                         placeholder="Phone"
                         name="phone"
+                        value= ''
                         aria-invalid={errors.name ? "true" : "false"}
                         {...register("phone", {
                           required: "Please enter your phone number",
@@ -89,6 +92,7 @@ const Contact = () => {
                          className="form-control"
                          placeholder="Email"
                          name="email"
+                         value= ''
                          aria-invalid={errors.name ? "true" : "false"}
                         {...register("email", {
                           required: "Please enter your email",
@@ -111,6 +115,7 @@ const Contact = () => {
                         className="form-control"
                         placeholder="Subject"
                         name="subject"
+                        value= ''
                         aria-invalid={errors.name ? "true" : "false"}
                         {...register("subject", {
                           required: "You literally didn't enter a subject",
@@ -132,6 +137,7 @@ const Contact = () => {
                         className="form-control"
                         placeholder="Ask or tell me anything..."
                         name="description"
+                        value= ''
                         aria-invalid={errors.name ? "true" : "false"}
                         {...register("description", {
                           required: "You didn't enter a subject, how will I know what you want?",

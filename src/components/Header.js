@@ -14,7 +14,7 @@ const Header = () => {
                     backSpeed={80}
                     loop
                 />
-                <a href="#" className = "btn-contact">Contact Me</a>
+                <p>Nice to see you here! I am a software developer who works on multiple architectures and study areas, including HCI research and development. Feel free to contact me, I'd love to chat!</p>
             </div>
             
         </div>

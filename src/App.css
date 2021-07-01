@@ -57,7 +57,15 @@ body{
   position: fixed;
   top:0;
   width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
+@media(max-width: 768px){
+  .navbar{
+  padding: 0 0 0 0;
+  }
+}
+
 nav{
   z-index: 2;
 }
@@ -105,10 +113,20 @@ nav ul li{
 .header-wrapper{
   position: relative;
   background: url(wallpaperflare.com_wallpaper.jpg) no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 90vh;
   box-shadow: 0 0 20px 30px  #584692 inset;
+}
+
+@media only screen and (max-device-width: 768px){
+  .header-wrapper{
+    background-attachment: scroll;
+  }
+  .contact{
+    background-attachment: scroll;
+  }
 }
 
 .main-info{
@@ -129,6 +147,11 @@ nav ul li{
   z-index: 3;
 }
 
+.main-info p{
+  font-size: large;
+  padding: 0 40rem;
+  text-shadow: .1rem .1rem var(--primary-pink);
+}
 /*Typed text*/
 .typed-text{
   font-size: 2rem;
@@ -192,6 +215,7 @@ nav ul li{
 .container p{
   font-family: 'Staatliches', cursive !important;
   font-size: larger;
+  color: var(--primary-yellow);
 }
 
 .about-me p:hover{
@@ -263,7 +287,7 @@ nav ul li{
 
 .experience-wrapper{
   position: relative;
-  padding: 3.125rem 0;
+  padding: 4rem 0;
   overflow: hidden;
 }
 
@@ -462,6 +486,7 @@ nav ul li{
 /*Contact Form */
 .contact{
   background: url(pyrimid.png) no-repeat;
+  background-attachment: fixed;
   box-shadow: 0 2rem 2rem #261447 inset;
   padding: 10rem 0;
 
@@ -506,20 +531,20 @@ nav ul li{
   border-bottom: 2px solid var(--primary-yellow);
   transition: 0.3s ease-in-out;
 }
-/*BROWSER RULES*/
 .contact input::placeholder, .contact textarea::placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact::-webkit-input-placeholder, .contact::-webkit-input-placeholder{
+/*BROWSER RULES*/
+::-webkit-input-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact::-moz-placeholder, .contact::-moz-placeholder{
+::-moz-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }
-.contact:-ms-input-placeholder, .contact:-ms-input-placeholder{
+:-ms-input-placeholder{
   color: #2de2e6 !important;
   opacity: 50%;
 }

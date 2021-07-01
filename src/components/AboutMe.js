@@ -18,10 +18,10 @@ const AboutMe = () => {
                         Hello, my name is Myles! I am a full stack developer and a computer science graduate passionate about UI design and data engineering. 
                         
                         For a bit on my personal life,
-                        I am obsessed with 80's style music and design, and I love to spend my free time playing VR or Magic the Gathering. 
+                        I enjoy 80's style music and design, and I love to spend my free time playing VR or Magic the Gathering. 
                         I am from Indiana, I have a cat named Simon (see him below), and two snakes, Perry and Major.
                         
-                        I enjoy reading any book that I can get my grubby little hands on, and some say I would even be considered a book horder!
+                        I enjoy reading any book that I can get my hands on, and some say I would even be considered a book horder!
                         
                     </p>
                 </div>
@@ -33,7 +33,7 @@ const AboutMe = () => {
             <div className="about-me col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
                         <img className="profileimg" src={cat} alt="author..."/>
-                        <p>This is Simon. He is the worst doodoohead troublemaking smelly boy that I have ever met. He also sits for his food. And does parkour.</p>
+                        <p>This is Simon. He is a mischievous troublemaker. He also sits for his food. And does parkour.</p>
                     </div>
                 </div>
             </div>
