@@ -3,11 +3,9 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import About from "./components/AboutMe";
-import Experience from './components/Experience';
+
 import Particles from "react-particles-js";
-import Portfolio from './components/Portfolio';
-import Contact from "./components/Contact";
+
 import Footer from "./components/Footer";
 
 function App() {
@@ -33,7 +31,7 @@ function App() {
           draw:{
             stroke:{
               color: "#F9C80E",
-              width: 50
+              width: 0
             }
           }
         },
@@ -61,7 +59,7 @@ function App() {
           },
           links:{
             color: "#F9C80E",
-            width: 2,
+            width: 0,
             distance: 150 
           },
           line_linked:{
@@ -85,10 +83,6 @@ function App() {
     />
     <Navbar />
     <Header />
-    <About />
-    <Experience />
-    <Portfolio />
-    <Contact />
     <Footer />
     </>
   );

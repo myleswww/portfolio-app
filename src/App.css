@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root{
   --primary-pink: #FF4365;
@@ -13,6 +14,20 @@ body{
    #584692 70%,  #261447 100%);
   background-clip: content-box, padding-box;
 
+}
+body::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
 }
 .App {
   text-align: center;
@@ -59,6 +74,37 @@ body{
   width: 100%;
   padding-left: 10rem;
   padding-right: 10rem;
+  background-color: #000000;
+}
+.navbar::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.navbar::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.navbar .navbardark{
+  background-color: #000000;
 }
 @media(max-width: 768px){
   .navbar{
@@ -100,6 +146,7 @@ nav ul li{
   text-shadow: 0rem 0rem 1rem var(--primary-yellow);
   transform: scale(1.1);
   transition: .2s ease-in-out;
+  animation: textShadow 2s infinite;
 }
 
 .navbar-nav > li > a:focus{
@@ -108,17 +155,91 @@ nav ul li{
   transform: scale(1.1);
 }
 
+/*Navbar POPUP BOXES*/
+.popupbox-wrapper{
+  color: white;
+  background-color: black !important;
+  border: 5px solid #584692 !important;
+  height: 70%;
+  width: 70%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  overflow: visible;
+  font-family: 'VT323', monospace !important;
+  display: flex;
+  
+}
+
+.popupbox-wrapper::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.popupbox-wrapper::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.popupbox-wrapper .popupbox-content{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.popupbox-wrapper >.title-bar{
+  background-color: #261447 !important;
+  padding-top: 0;
+  padding-bottom: 1;
+  margin: 0 0 0 0;
+  border-bottom: none;
+}
+.popupbox-wrapper > .close-button{
+  font-family: 'VT323', monospace !important;
+  border: 1px solid #000000;
+}
+.popup-nav{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  overflow-y:auto;
+  position: relative;
+  height: 100%;
+  width: inherit;
+}
+.popup-nav::-webkit-scrollbar{
+ display: block;
+ width: 5px;
+ height: 8px;
+ background-color: #584692;
+ border: 1px solid #261447;
+}
 
 /*Header*/
 .header-wrapper{
   position: relative;
-  background: url(wallpaperflare.com_wallpaper.jpg) no-repeat;
+  background: url(pyrimid.png) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 90vh;
-  box-shadow: 0 0 20px 30px  #584692 inset;
+  height: 91vh;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite; /*USE THIS LATER */
+  /*box-shadow: 0 0 20px 30px  #584692 inset;*/
 }
+
 
 @media only screen and (max-device-width: 768px){
   .header-wrapper{
@@ -145,7 +266,9 @@ nav ul li{
   right:0;
   bottom: 0;
   z-index: 3;
+  animation: textShadow 2s infinite;
 }
+
 
 .main-info p{
   font-size: large;
@@ -162,6 +285,9 @@ nav ul li{
 @media(max-width: 768px){
   .main-info h1{
     font-size: 2rem;
+  }
+  .main-info p{
+    padding: 0 3rem;
   }
   .main-info{
     font-size: 1.5rem !important;
@@ -199,6 +325,7 @@ nav ul li{
   height: 100vh;
   width: 100vw;
   z-index: 1;
+  animation: textShadow 2s infinite;
 }
 
 /*About me*/
@@ -278,7 +405,7 @@ nav ul li{
   text-shadow: 0.1rem 0.1rem var(--primary-pink) !important;
   box-shadow: 0.1rem  var(--primary-pink) !important;
   padding: 0.7rem;
-  border-top: 10px solid var(--primary-yellow);
+  border-top: 0;
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -387,8 +514,8 @@ nav ul li{
 /*Portfolio*/
 .portfolio-wrapper{
   padding: 3rem 0;
-  background-color: #261447;
-  border-top: 5px solid var(--primary-yellow);
+  background-color:#000000;
+  border-top: 0;
   border-bottom: 0;
   border-right: 0;
   border-left: 0;
@@ -452,6 +579,7 @@ nav ul li{
 .portfolio-image-popupbox{
   width: 45rem;
   padding: 0 0.5rem;
+  
 }
 
 .hyper-link{
@@ -485,11 +613,11 @@ nav ul li{
 
 /*Contact Form */
 .contact{
-  background: url(pyrimid.png) no-repeat;
+  background: #000000;
   background-attachment: fixed;
-  box-shadow: 0 2rem 2rem #261447 inset;
-  padding: 10rem 0;
-
+  /*box-shadow: 0 2rem 2rem #261447 inset;*/
+  padding: 0 0 2 2;
+  overflow: hidden;
 }
 
 .contact h1{
@@ -497,6 +625,7 @@ nav ul li{
   text-shadow: 0rem 0rem 1rem var(--primary-yellow);
   color: var(--primary-pink);
   padding: 1.3rem 0;
+  animation: textShadow 2s infinite;
 }
 
 .contact p{
@@ -617,10 +746,22 @@ input.form-control{
 
 /*Footer*/
 .footer{
-  background: #101114;
+  background: #000000;
   padding: .5rem;
 }
-
+.footer::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
 .footer a{
   font-size: small;
   text-decoration: none;
@@ -640,4 +781,139 @@ input.form-control{
   font-size: small;
   font-family: "Roboto-Condensed", sans-serif !important;
   margin-bottom: 0;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes flicker {
+  0% {
+  opacity: 0.27861;
+  }
+  5% {
+  opacity: 0.34769;
+  }
+  10% {
+  opacity: 0.23604;
+  }
+  15% {
+  opacity: 0.90626;
+  }
+  20% {
+  opacity: 0.18128;
+  }
+  25% {
+  opacity: 0.83891;
+  }
+  30% {
+  opacity: 0.65583;
+  }
+  35% {
+  opacity: 0.67807;
+  }
+  40% {
+  opacity: 0.26559;
+  }
+  45% {
+  opacity: 0.84693;
+  }
+  50% {
+  opacity: 0.96019;
+  }
+  55% {
+  opacity: 0.08594;
+  }
+  60% {
+  opacity: 0.20313;
+  }
+  65% {
+  opacity: 0.71988;
+  }
+  70% {
+  opacity: 0.53455;
+  }
+  75% {
+  opacity: 0.37288;
+  }
+  80% {
+  opacity: 0.71428;
+  }
+  85% {
+  opacity: 0.70419;
+  }
+  90% {
+  opacity: 0.7003;
+  }
+  95% {
+  opacity: 0.36108;
+  }
+  100% {
+  opacity: 0.24387;
+  }
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
 }
