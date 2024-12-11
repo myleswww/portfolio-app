@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Particles from "react-particles-js";
 
 import Footer from "./components/Footer";
+import icon from "./outrun-sun-icon.ico";
 
 function App() {
   return (
