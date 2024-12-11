@@ -9,6 +9,7 @@ import Particles from "react-particles-js";
 import Portfolio from './components/Portfolio';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import icon from "./outrun-sun-icon.ico";
 
 function App() {
   return (
